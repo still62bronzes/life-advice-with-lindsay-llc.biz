@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -83,7 +82,7 @@
     .card{background:var(--card);border-radius:var(--radius);padding:18px;border:1px solid #eef1f5;box-shadow:var(--shadow)}
     .card h3{margin:0 0 6px;font-size:18px}
     .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:26px 0}
-    .trust .mini{background:#fff;border:1px solid #eef1f5;border-radius:12px;padding:12px;text-align:center;color:var(--muted);font-weight:600}
+    .trust .mini{background:#fff;border:1px solid #eef1f5;border-radius:12px;padding:12px;text-align:center;color:#muted;font-weight:600}
     section{padding:48px 0}
     .section-title{font-size:28px;margin:0 0 8px}
     .section-sub{color:var(--muted);margin:0 0 18px}
@@ -125,6 +124,10 @@
     .consent-line{display:flex;gap:10px;align-items:flex-start;margin:12px 0}
     .consent-line input[type="checkbox"]{width:18px;height:18px;margin-top:2px;flex-shrink:0}
     .consent-line label{font-size:14px;line-height:1.5;color:#374151}
+
+    /* Added footnote style directly below checkboxes */
+    .consent-footnote{font-size:12px;color:#4b5563;margin:6px 0 10px}
+    .consent-footnote a{color:inherit;text-decoration:underline}
 
     /* Mobile */
     @media(max-width:900px){
@@ -459,6 +462,7 @@
                 Text <strong>HELP</strong> for help or contact us at
                 <a href="tel:(954) 851-4407">(954) 851-4407</a> or
                 <a href="mailto:Lindsay@life-advice-with-lindsay-llc.biz">Lindsay@life-advice-with-lindsay-llc.biz</a>.
+                <br><em>Consent is not a condition of purchase.</em>
               </p>
             </div>
 
@@ -489,10 +493,19 @@
               <label for="consent-marketing">
                 <strong>
                   I consent to receive marketing and promotional text messages and emails
-                  from Life Advice with Lindsay LLC.
+                  from Life Advice with Lindsay LLC about available insurance options, quotes,
+                  policy updates, and related services.
                 </strong>
               </label>
             </div>
+
+            <!-- concise disclosure directly below the checkboxes -->
+            <p class="consent-footnote">
+              By selecting either checkbox, you authorize Life Advice with Lindsay LLC to contact you via SMS at the number provided.
+              Message frequency may vary. <strong>Msg &amp; data rates may apply.</strong>
+              Reply <strong>STOP</strong> to opt out, <strong>HELP</strong> for help.
+              <em>Consent is not a condition of purchase.</em>
+            </p>
 
             <!-- Legal acceptance -->
             <div class="consent-line">
@@ -538,7 +551,11 @@
                   <li>To monitor the usage of our Service.</li>
                 </ul>
                 <p><strong>3. Information Sharing and Disclosure</strong><br>
-                We do not sell, trade, or otherwise transfer your personal information, including phone number, to any third parties.</p>
+                We do not sell or share your personal information, including your phone number, with unaffiliated third parties for their own marketing purposes. We may disclose personal information to our trusted service providers and processors (for example, Twilio Inc. and mobile carriers) solely to deliver and manage communications and services on our behalf, consistent with this Privacy Policy.</p>
+
+                <p><strong>3.5 Mobile Messaging &amp; SMS Communications</strong><br>
+                If you provide your phone number and consent to receive text messages from Life Advice with Lindsay LLC, we may send you informational, appointment-related, and promotional SMS or MMS messages about insurance products and related services. You may opt out of SMS communications at any time by replying <strong>STOP</strong> to any message. You may obtain assistance by replying <strong>HELP</strong> or emailing <a href="mailto:Lindsay@life-advice-with-lindsay-llc.biz">Lindsay@life-advice-with-lindsay-llc.biz</a>. Message frequency may vary based on engagement, and <strong>message and data rates may apply</strong>. Consent to receive text messages is <strong>not a condition of purchase</strong>.</p>
+
                 <p><strong>4. Data Security</strong><br>
                 We implement reasonable security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information.</p>
                 <p><strong>5. Changes to this Privacy Policy</strong><br>
@@ -566,11 +583,19 @@
                 <p><strong>4. Limitation of Liability</strong><br>
                 <em>4.1 Disclaimer:</em> The Service is provided "as is" and "as available" without any warranties, expressed or implied. We do not warrant that the Service will be error-free or uninterrupted, that defects will be corrected, or that the Service is free of viruses or other harmful components.<br>
                 <em>4.2 Limitation of Liability:</em> In no event shall Life Advice with Lindsay LLC be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from (a) your use or inability to use the Service; (b) any unauthorized access to or use of our servers and/or any personal information stored therein.</p>
-                <p><strong>5. Governing Law</strong><br>
+
+                <p><strong>5. Mobile Messaging Terms</strong><br>
+                <em>5.1 Program Description.</em> Life Advice with Lindsay LLC may send informational, appointment, and marketing text messages to individuals who have provided express written consent to receive such messages from us. Messages may relate to available insurance plans, quotes, policy updates, reminders, and related services.<br>
+                <em>5.2 Opt-In and Opt-Out.</em> By submitting your information on our website and checking the appropriate consent boxes, you agree to receive SMS messages from Life Advice with Lindsay LLC. Message frequency may vary. Message and data rates may apply. You can opt out at any time by replying <strong>STOP</strong> to any message. After you send STOP, we may send one final confirmation message to confirm your opt-out. To receive assistance, reply <strong>HELP</strong> or email <a href="mailto:Lindsay@life-advice-with-lindsay-llc.biz">Lindsay@life-advice-with-lindsay-llc.biz</a>.<br>
+                <em>5.3 Consent Not Required for Purchase.</em> Your consent to receive SMS messages is not a condition of purchasing any goods or services.<br>
+                <em>5.4 Supported Carriers.</em> Delivery of messages is subject to the effective transmission by your mobile carrier. Carriers are not liable for delayed or undelivered messages.<br>
+                <em>5.5 Changes to Mobile Program.</em> We may modify or terminate our messaging program at any time. Any changes will be reflected in this section of our Terms of Service.</p>
+
+                <p><strong>6. Governing Law</strong><br>
                 These Terms and Conditions shall be governed by and construed in accordance with the laws of The United States of America, without regard to its conflict of law principles.</p>
-                <p><strong>6. Changes to Terms and Conditions</strong><br>
+                <p><strong>7. Changes to Terms and Conditions</strong><br>
                 We reserve the right to update or change these Terms and Conditions at any time. Your continued use of the Service after we post any modifications to the Terms and Conditions on this page will constitute your acknowledgment of the modifications and your consent to abide and be bound by the modified Terms and Conditions.</p>
-                <p><strong>7. Contact Us</strong><br>
+                <p><strong>8. Contact Us</strong><br>
                 If you have any questions about these Terms and Conditions, please contact us at <a href="mailto:Lindsay@life-advice-with-lindsay-llc.biz">Lindsay@life-advice-with-lindsay-llc.biz</a>.</p>
               </div>
             </details>
@@ -629,7 +654,7 @@
     function handleSubmit(e){
       e.preventDefault();
       const status=document.getElementById('formStatus');
-      status.textContent='Thanks! We received your request. We'll reach out soon!';
+      status.textContent='Thanks! We received your request. We\'ll reach out soon!';
       e.target.reset();
     }
   
